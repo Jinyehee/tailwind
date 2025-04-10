@@ -38,7 +38,7 @@ export default function Addmain({ setAddMain, setPost, setShowmodal }) {
          date: "",
       });
 
-      setAddMain((prov) => !prov);
+      setAddMain((prev) => !prev);
    };
 
    return (

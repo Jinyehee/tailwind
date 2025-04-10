@@ -9,9 +9,11 @@ export default function Task({ task, deleteTask }) {
    };
 
    const handelComments = () => {
-      setComments((prev) => [...prev, comment]);
-      setComment("");
-      console.log(comments);
+      if (comment) {
+         setComments((prev) => [...prev, comment]);
+         setComment("");
+         console.log(comments);
+      }
    };
 
    const clearComment = (index) => {
