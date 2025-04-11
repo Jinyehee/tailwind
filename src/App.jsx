@@ -4,6 +4,8 @@ import Addmain from "./components/Addmain";
 import Task from "./components/Task";
 import Modal from "./components/Modal";
 import { useRef, useState } from "react";
+import ModeButton from "./components/ModeButton";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 function App() {
    const [addMain, setAddMain] = useState(true);
@@ -25,8 +27,9 @@ function App() {
    }
 
    return (
-      <>
-         <div className="m-0 p-0 flex">
+      <ThemeProvider>
+         <div className="m-0 p-0 flex pink:bg-pink-50">
+            <ModeButton />
             <Aside
                setAddMain={setAddMain}
                post={post}
@@ -45,7 +48,7 @@ function App() {
             )}
          </div>
          <Modal ref={modalRef} setShowmodal={setShowmodal} />
-      </>
+      </ThemeProvider>
    );
 }
 

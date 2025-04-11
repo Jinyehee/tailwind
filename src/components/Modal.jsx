@@ -9,7 +9,7 @@ const Modal = forwardRef(({ setShowmodal }, ref) => {
       >
          <p className="text-xl mb-10">내용을 입력하세요!!</p>
          <button
-            className="px-6 py-2 bg-blue-800 text-white rounded-md hover:bg-blue-900 transition duration-300"
+            className="px-6 py-2 bg-blue-800 text-white rounded-md hover:bg-blue-900 transition duration-300 duration-300 pink:bg-pink-300 pink:hover:bg-pink-500"
             onClick={() => {
                ref.current.close();
                setShowmodal(false);

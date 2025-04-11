@@ -51,7 +51,7 @@ export default function Addmain({ setAddMain, setPost, setShowmodal }) {
                Cancel
             </button>
             <button
-               className="px-6 py-2 bg-blue-800 text-white rounded-md hover:bg-blue-900 transition duration-300"
+               className="px-6 py-2 bg-blue-800 text-white rounded-md hover:bg-blue-900 transition duration-300 pink:bg-pink-300"
                onClick={addPost}
             >
                Create

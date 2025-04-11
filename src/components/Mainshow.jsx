@@ -7,7 +7,7 @@ export default function Mainshow({ setAddMain }) {
          <p className="font-blod text-2xl">No Project Selected</p>
          <p>Select a project or get started with a new one</p>
          <button
-            className="bg-blue-950 text-white p-3 rounded-xl"
+            className="bg-blue-950 text-white p-3 rounded-xl duration-300 pink:bg-pink-300 "
             onClick={() => setAddMain((prov) => !prov)}
          >
             Create new project
